@@ -4,9 +4,11 @@ const { $t } = useI18n()
 </script>
 
 <template>
-  <footer class="py-8 px-6 border-t border-gray-200">
-    <div class="max-w-5xl mx-auto text-center text-sm text-gray-400">
-      {{ $t('footer.copyright') }}
+  <footer class="py-10 px-6 border-t border-black/10 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm text-black/40 tracking-wide">
+        {{ $t('footer.copyright') }}
+      </p>
     </div>
   </footer>
 </template>
