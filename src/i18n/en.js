@@ -1,6 +1,6 @@
 export default {
   nav: {
-    hero: 'Home',
+    home: 'Home',
     about: 'About',
     experience: 'Experience',
     projects: 'Projects',

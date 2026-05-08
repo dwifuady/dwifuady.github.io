@@ -1,6 +1,6 @@
 export default {
   nav: {
-    hero: 'Beranda',
+    home: 'Beranda',
     about: 'Tentang',
     experience: 'Pengalaman',
     projects: 'Proyek',
