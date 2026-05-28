@@ -7,35 +7,59 @@ const skillList = $t('experience.skillList')
 </script>
 
 <template>
-  <section id="experience" class="py-32 px-6 bg-gray-50">
-    <div class="max-w-3xl mx-auto space-y-16">
-      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
-        {{ $t('experience.heading') }}
-      </h2>
+  <section id="experience" class="py-32 px-6 bg-white border-y border-zinc-100">
+    <div class="max-w-4xl mx-auto">
+      <!-- Section label -->
+      <div class="reveal text-center mb-16">
+        <span class="text-xs font-semibold tracking-widest uppercase text-zinc-400 bg-zinc-100 px-4 py-1.5 rounded-full">
+          {{ $t('experience.heading') }}
+        </span>
+      </div>
 
-      <div class="space-y-12">
+      <!-- Timeline -->
+      <div class="space-y-1 reveal reveal-delay-1">
         <div
           v-for="(item, i) in timeline"
           :key="i"
-          class="relative pl-8 border-l-2 border-gray-300"
+          class="relative pl-10 pb-12 last:pb-0 border-l-2 border-zinc-200 group"
         >
-          <div class="absolute left-[-5px] top-1 w-2 h-2 rounded-full bg-black" />
-          <span class="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+          <!-- Animated dot -->
+          <div class="absolute left-[-6px] top-1.5 timeline-dot">
+            <div class="w-2.5 h-2.5 rounded-full bg-zinc-900 ring-4 ring-white transition-all duration-300 group-hover:bg-amber-500 group-hover:ring-amber-100" />
+          </div>
+
+          <!-- Year badge -->
+          <span class="inline-block text-xs font-semibold text-zinc-400 tracking-wider mb-2 px-2 py-0.5 rounded-md bg-zinc-50 border border-zinc-100">
             {{ item.year }}
           </span>
-          <h3 class="text-xl font-semibold mt-1">{{ item.role }}</h3>
-          <p class="text-gray-500 text-sm mb-2">{{ item.company }}</p>
-          <p class="text-gray-600 leading-relaxed">{{ item.desc }}</p>
+
+          <!-- Role -->
+          <h3 class="text-lg sm:text-xl font-semibold text-zinc-900 mt-1">
+            {{ item.role }}
+          </h3>
+
+          <!-- Company -->
+          <p class="text-sm text-zinc-500 font-medium mb-3">
+            {{ item.company }}
+          </p>
+
+          <!-- Description -->
+          <p class="text-zinc-600 leading-relaxed max-w-2xl">
+            {{ item.desc }}
+          </p>
         </div>
       </div>
 
-      <div class="space-y-4">
-        <h3 class="text-xl font-semibold">{{ $t('experience.skills') }}</h3>
-        <div class="flex flex-wrap gap-3">
+      <!-- Skills -->
+      <div class="mt-20 reveal reveal-delay-2">
+        <h3 class="text-sm font-semibold text-zinc-400 tracking-widest uppercase mb-6">
+          {{ $t('experience.skills') }}
+        </h3>
+        <div class="flex flex-wrap gap-2.5">
           <span
             v-for="(skill, i) in skillList"
             :key="i"
-            class="px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-full hover:border-black hover:bg-black hover:text-white transition-colors cursor-default"
+            class="px-4 py-2 text-sm font-medium text-zinc-600 bg-zinc-50 border border-zinc-200 rounded-full hover:border-zinc-900 hover:bg-white hover:text-zinc-900 hover:shadow-sm transition-all duration-300 cursor-default"
           >
             {{ skill }}
           </span>

@@ -7,13 +7,21 @@ export default {
     contact: 'Kontak',
   },
   hero: {
+    greeting: 'Halo, saya',
     name: 'Septian Dwi Fuady',
     title: 'Software Engineer',
     tagline: 'Membangun solusi digital yang andal sejak 2015',
+    cta: 'Hubungi saya',
   },
   about: {
     heading: 'Tentang Saya',
-    bio: 'Saya adalah seorang Software Engineer dengan pengalaman lebih dari 9 tahun di pengembangan web, khususnya ekosistem C#/.NET. Saya fokus pada pembuatan aplikasi yang scalable, maintainable, dan user-friendly.',
+    bio: 'Saya adalah seorang Software Engineer dengan pengalaman lebih dari 9 tahun di pengembangan web, khususnya ekosistem C#/.NET. Saya fokus pada pembuatan aplikasi yang scalable, maintainable, dan user-friendly yang menyelesaikan masalah nyata.',
+    highlights: [
+      '9+ tahun pengalaman web',
+      'Spesialis ekosistem C# / .NET',
+      'Full-stack capable',
+      'Advokat clean architecture',
+    ],
   },
   experience: {
     heading: 'Pengalaman & Keahlian',
@@ -28,15 +36,34 @@ export default {
   },
   projects: {
     heading: 'Proyek',
-    empty: 'Belum ada proyek yang ditambahkan. Segera hadir!',
+    empty: 'Proyek lainnya segera hadir.',
+    items: [
+      {
+        title: 'Dashboard SaaS',
+        desc: 'Dashboard analitik real-time dibangun dengan Vue 3 dan .NET Core. Fitur grafik interaktif, akses berbasis peran, dan live update via WebSocket.',
+        tags: ['Vue 3', '.NET Core', 'PostgreSQL', 'SignalR'],
+      },
+      {
+        title: 'API E-Commerce',
+        desc: 'RESTful API performa tinggi untuk platform e-commerce. Menangani 10rb+ pengguna bersamaan dengan Redis caching dan deployment Azure.',
+        tags: ['ASP.NET Core', 'Redis', 'Azure', 'SQL Server'],
+      },
+      {
+        title: 'Suite Alat Internal',
+        desc: 'Kumpulan alat produktivitas internal termasuk manajer tugas, generator dokumen, dan dashboard tim.',
+        tags: ['Vue.js', 'C#', 'Entity Framework', 'REST API'],
+      },
+    ],
   },
   contact: {
-    title: 'Kontak',
-    subtitle: 'Terhubung dengan saya melalui platform berikut:',
+    title: 'Mari Terhubung',
+    subtitle: 'Saya selalu terbuka untuk peluang baru dan percakapan menarik.',
     linkedin: 'LinkedIn',
     github: 'GitHub',
+    email: 'Email',
   },
   footer: {
-    copyright: 'Hak Cipta \u00a9 2026 Septian Dwi Fuady. Seluruh hak cipta dilindungi.',
+    copyright: '\u00a9 2026 Septian Dwi Fuady',
+    tagline: 'Dibangun dengan Vue & TailwindCSS',
   },
 }

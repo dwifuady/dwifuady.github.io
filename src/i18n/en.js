@@ -7,13 +7,21 @@ export default {
     contact: 'Contact',
   },
   hero: {
+    greeting: 'Hi, I\'m',
     name: 'Septian Dwi Fuady',
     title: 'Software Engineer',
     tagline: 'Building reliable digital solutions since 2015',
+    cta: 'Get in touch',
   },
   about: {
     heading: 'About Me',
-    bio: 'I am a Software Engineer with over 9 years of experience in web development, specializing in the C#/.NET ecosystem. I focus on building scalable, maintainable, and user-friendly applications.',
+    bio: 'I am a Software Engineer with over 9 years of experience in web development, specializing in the C#/.NET ecosystem. I focus on building scalable, maintainable, and user-friendly applications that solve real problems.',
+    highlights: [
+      '9+ years in web development',
+      'C# / .NET ecosystem specialist',
+      'Full-stack capable',
+      'Clean architecture advocate',
+    ],
   },
   experience: {
     heading: 'Experience & Skills',
@@ -28,15 +36,34 @@ export default {
   },
   projects: {
     heading: 'Projects',
-    empty: 'No projects added yet. Coming soon!',
+    empty: 'More projects coming soon.',
+    items: [
+      {
+        title: 'SaaS Dashboard',
+        desc: 'Real-time analytics dashboard built with Vue 3 and .NET Core. Features interactive charts, role-based access, and WebSocket live updates.',
+        tags: ['Vue 3', '.NET Core', 'PostgreSQL', 'SignalR'],
+      },
+      {
+        title: 'E-Commerce API',
+        desc: 'High-performance RESTful API for an e-commerce platform. Handles 10k+ concurrent users with Redis caching and Azure deployment.',
+        tags: ['ASP.NET Core', 'Redis', 'Azure', 'SQL Server'],
+      },
+      {
+        title: 'Internal Tools Suite',
+        desc: 'Collection of internal productivity tools including a task manager, document generator, and team dashboard.',
+        tags: ['Vue.js', 'C#', 'Entity Framework', 'REST API'],
+      },
+    ],
   },
   contact: {
-    title: 'Contact',
-    subtitle: 'Connect with me through the following platforms:',
+    title: 'Let\'s Connect',
+    subtitle: 'I\'m always open to new opportunities and interesting conversations.',
     linkedin: 'LinkedIn',
     github: 'GitHub',
+    email: 'Email',
   },
   footer: {
-    copyright: 'Copyright \u00a9 2026 Septian Dwi Fuady. All rights reserved.',
+    copyright: '\u00a9 2026 Septian Dwi Fuady',
+    tagline: 'Built with Vue & TailwindCSS',
   },
 }
